@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauna Hekuma - Liikkuva Telttasauna Jyväskylässä</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        
+        :root {
+            --primary: #f0b3a8;
+            --secondary: #0f4c57;
+            --black: #000000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: var(--primary);
+            padding: 2rem;
+            text-align: center;
+            color: var(--secondary);
+        }
+        
+        .nav {
+            background-color: var(--secondary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            height: 320px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .services {
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+        
+        .price-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 400px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .booking {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .calendar {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .button {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Sauna Hekuma</h1>
+        <p>Elämyksellinen telttasaunakokemus Jyväskylässä</p>
+    </header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="#tietoa">Tietoa</a></li>
+            <li><a href="#palvelut">Palvelut</a></li>
+            <li><a href="#varaus">Varaa sauna</a></li>
+            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+    
+    <section id="tietoa" class="section about">
+        <div class="profile-img">
+            [Kuva tulee tähän]
+        </div>
+        <div>
+            <h2>Tervetuloa saunomaan!</h2>
+            <p>Hei, olen Ville! Intohimoni on tarjota ainutlaatuisia saunaelämyksiä kaikille saunomisen ystäville. Uskon vahvasti, että sauna on enemmän kuin vain löylyt – se on kokemus, joka yhdistää ihmiset ja luo unohtumattomia hetkiä.</p>
+            <p>Halusin tehdä saunakokemuksesta helpommin saavutettavan kaikille, ja siksi perustin Sauna Hekuman. Tuon telttasaunan suoraan luoksesi, lämmitän sen valmiiksi ja huolehdin kaikesta – sinun tarvitsee vain nauttia!</p>
+        </div>
+    </section>
+    
+    <section id="palvelut" class="section services">
+        <h2>Palvelumme</h2>
+        <div class="price-card">
+            <h3>Saunaelämys</h3>
+            <p>Sopii 4-6 hengelle</p>
+            <p>Sisältää:</p>
+            <ul style="list-style: none;">
+                <li>✓ Telttasaunan kuljetuksen</li>
+                <li>✓ Saunan lämmityksen</li>
+                <li>✓ Ammattimaisen opastuksen</li>
+                <li>✓ 2 tunnin saunaelämyksen</li>
+            </ul>
+            <h3>120€ / 2h</h3>
+            <a href="#varaus" class="button">Varaa nyt</a>
+        </div>
+        
+        <p>Täydellinen valinta:</p>
+        <ul>
+            <li>Yritysten virkistyspäiviin</li>
+            <li>Polttareihin</li>
+            <li>Yksityistilaisuuksiin</li>
+            <li>Juhliin ja tapahtumiin</li>
+        </ul>
+    </section>
+    
+    <section id="varaus" class="section booking">
+        <h2>Varaa saunaelämys</h2>
+        <p>Valitse sopiva ajankohta alla olevasta kalenterista:</p>
+        <div class="calendar">
+            [Tähän tulee varauskalenteri]
+        </div>
+    </section>
+    
+    <section id="yhteystiedot" class="section">
+        <h2>Yhteystiedot</h2>
+        <p>Ville / Sauna Hekuma</p>
+        <p>Toiminta-alue: Jyväskylä ympäristöineen</p>
+        <p>Seuraa meitä Instagramissa: @saunahekuma</p>
+        <a href="https://instagram.com/saunahekuma" class="button">Instagram</a>
+    </section>
+</body>
+</html>
